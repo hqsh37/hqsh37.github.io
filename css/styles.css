@@ -111,6 +111,7 @@ html {
     background-size: cover; 
     background-position: center top;
     position: relative;
+    background-color: #333;
 }
 
 #Slider .text-noidung{
