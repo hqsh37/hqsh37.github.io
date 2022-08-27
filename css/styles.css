@@ -106,7 +106,7 @@ html {
 #Slider{
     margin-top: 46px;
     padding-top: 50%;
-    background-image: url('/web_w3/acset/img/imgslider/anh1.jpg');
+    background-image: url('img/imgslider/anh1.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center top;
