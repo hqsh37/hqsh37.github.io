@@ -1,0 +1,138 @@
+/* reset trang */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+
+#Header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+#Header .search-btn {
+    float: right;
+}
+
+#Header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#Header .icon-search {   
+    color: #fff;
+    line-height: 46px;
+    padding: 0 30px;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;    
+}
+
+#nav li{ 
+    position: relative;
+}
+
+#nav .subnav li:hover a, #nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+
+}
+
+#nav > li:hover > .subnav {
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav .icon-down {
+    font-size: 14px;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+}
+
+
+#nav .subnav li {
+    background-color: #fff;
+    color: #000;
+    
+}
+
+#nav .subnav li a {
+    color: #000;
+    display: block;
+    line-height: 38px;  
+}
+
+#Slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url('/web_w3/acset/img/imgslider/anh1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center top;
+    position: relative;
+}
+
+#Slider .text-noidung{
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+#Slider .text-tieude{
+    padding-bottom: 16px;
+}
+
+
+#Content{
+height: 10000px;
+width: 500px;
+}
+
+#Footer{
+
+}
