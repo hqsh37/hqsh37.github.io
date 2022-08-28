@@ -258,7 +258,7 @@ html {
     margin: 16px;
 }
 
-#content .sub-tour a {
+#content .sub-tour .btn-buy-ticket {
     display: inline-block;
     text-decoration: none;
     background-color: #000;
@@ -267,11 +267,11 @@ html {
     color: #fff;
 }
 
-#content .sub-tour a:hover {
+#content .sub-tour .btn-buy-ticket:hover {
     opacity: 0.6;
 }
 
-#modal {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -282,6 +282,10 @@ html {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
 
+}
+
+.open-modal {
+    display: flex;
 }
 
 .modal-content {

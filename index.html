@@ -84,7 +84,7 @@
                                 <h2 class="tour-thanhpho">New York</h2>
                                 <p class="tour-ngaythang">Fri 27 Nov 2016</p>
                                 <P class="tour-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</P>
-                                <a href="#">Buy tickets</a>
+                                <button class="btn-buy-ticket js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
 
@@ -94,7 +94,7 @@
                                 <h2 class="tour-thanhpho">Paris</h2>
                                 <p class="tour-ngaythang">Sat 28 Nov 2016</p>
                                 <P class="tour-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</P>
-                                <a href="#">Buy tickets</a>
+                                <button class="btn-buy-ticket js-buy-ticket">Buy tickets</button>
                             </div>
                             
                         </div>
@@ -105,7 +105,7 @@
                                 <h2 class="tour-thanhpho">San Francisco</h2>
                                 <p class="tour-ngaythang">Sun 29 Nov 2016</p>
                                 <P class="tour-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</P>
-                                <a href="#">Buy tickets</a>
+                                <button class="btn-buy-ticket js-buy-ticket">Buy tickets</button>
                             </div>
                             
                         </div>
@@ -134,9 +134,9 @@
         </div>
     </div>
 
-    <div id="modal"> 
+    <div class="modal js-modal"> 
         <div class="modal-content">
-            <i class="ti-close"></i>
+            <i class="ti-close js-ti-close"></i>
 
             <header class="modal-header">
                 <i class="ti-bag"></i>
@@ -165,6 +165,26 @@
         </div>
     </div>
 
+
+    <script>
+        const byBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const closeModal = document.querySelector('.js-ti-close')
+        function showByTicket() {
+            modal.classList.add('open-modal')
+        }
+
+        function closeBuyticket() {
+            modal.classList.remove('open-modal')
+        }
+
+        for(const byBtn of byBtns){
+            byBtn.addEventListener('click', showByTicket)
+        }
+
+        closeModal.addEventListener('click', closeBuyticket)
+    </script>
     
 </body>
 </html>
+
