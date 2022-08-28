@@ -267,6 +267,107 @@ html {
     color: #fff;
 }
 
+#content .sub-tour a:hover {
+    opacity: 0.6;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.modal-content {
+    width: 900px;
+    background-color: #fff;
+    min-height: 400px;
+    display: block;
+    position: relative;
+}
+.modal-header {
+    background-color: #009688;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px; 
+       
+}
+
+.modal-header i {
+    padding-right: 16px;
+
+}
+
+.modal-content > i {
+    position: absolute;
+    right: 0;
+    padding: 12px;
+    color: #fff;
+
+}
+
+.modal-content i:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000;
+}
+.modal-body {
+    margin: 16px;
+    font-size: 15px;
+
+}
+
+.modal-body input {
+    width: 100%; 
+    padding: 8px;  
+    border: 1px solid #ddd;
+    margin-bottom: 10px; 
+}
+
+.sub-body{
+    display: block;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.modal-body button {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 16px;
+    background-color: #009688;
+    border: 0;
+    color: #fff;
+    
+}
+
+.modal-body button:hover {
+    opacity: 0.8;
+    color: #000;
+}
+
+.modal-footer {
+    line-height: ri;
+    padding: 16px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
 #Footer{
 
 }
+
+
