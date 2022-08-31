@@ -5,7 +5,7 @@
     box-sizing: border-box;
     list-style-type: none;
 }
-
+/* thuộc tính chung */
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +17,52 @@ html {
     color: #fff !important;
 }
 
-#main{
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-second {
+    width: 50%;
+}
+
+.col-thirt {
+    width: 33.33333%;
+}
+
+.col-center {
+    text-align: center;
+}
+
+.col-full {
+    width: 100%;
+}
+
+
+.mgr-8 {
+    margin-right: 8px;
+}
+
+.pdr-8 {
+    padding-right: 8px;
+}
+
+/* tạo element giả clear */
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* thuộc tính riêng */
+
+#main {
 
 }
 
@@ -156,7 +201,7 @@ html {
     font-weight: 300;
     letter-spacing: 4px;
 }
-#content .content-noidung .sub-content {
+#content .content-contact .sub-content {
     text-align: center;
     padding-top: 15px;
     font-style: italic;
@@ -172,13 +217,9 @@ html {
 #content .member {
     width: 100%;
     padding-top: 32px;
-    text-align: center;
 }
 
-#content .sub-member {
-    float: left;
-    width: 33.33333%;
-}
+
 
 #content .name-member {
     margin: 15px 0px;
@@ -210,6 +251,7 @@ html {
     background-color: #f44336;
     padding: 3px 4px;
     color: #fff;
+    margin-left: 16px;
 }
 
 #content .veconlai {
@@ -222,16 +264,14 @@ html {
 }
 
 #content .body-tour {
-    margin: 40px -8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #content .sub-tour {
-    margin-top: 15px;
-    float: left;
     width: calc(33.33333% - 16px);
     background-color: #fff;
     margin: 0px 8px;
-    margin-bottom: 40px;
 }
 #content .tour-noidung h2 {
     font-weight: 550;
@@ -271,6 +311,72 @@ html {
     opacity: 0.6;
 }
 
+#content .contact-body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+#content .fan-contact .chinhlai{
+    width: 100%;
+}
+
+.contact-body .dcs-contact {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-body .sub-fan input {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+.fan-contact .contact-send {
+    float: right;
+    padding: 8px 20px;
+    background: #000;
+    margin-top: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 25px;
+
+}
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);      
+}
+#footer p a {
+    color: rgba(0, 0, 0, 0.6);    
+}
+
+#footer p {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+#footer p a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);    
+}
+
+/* modal */
 .modal {
     position: fixed;
     top: 0;
