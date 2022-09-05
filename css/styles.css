@@ -1,11 +1,15 @@
 /* reset trang */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
+
+
 /* thuộc tính chung */
+
 html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
@@ -14,6 +18,7 @@ html {
 .clear {
     clear: both;
 }
+
 .text-white {
     color: #fff !important;
 }
@@ -45,7 +50,6 @@ html {
     width: 100%;
 }
 
-
 .mgr-8 {
     margin-right: 8px;
 }
@@ -53,9 +57,7 @@ html {
 .pdr-8 {
     padding-right: 8px;
 }
-.fix {
-    padding-right: 16px;
-}
+
 
 /* tạo element giả clear */
 
@@ -64,13 +66,13 @@ html {
     display: block;
     clear: both;
 }
+
+
 /* thuộc tính riêng */
 
-#main {
+#main {}
 
-}
-
-#Header{
+#Header {
     height: 46px;
     background-color: #000;
     position: fixed;
@@ -80,8 +82,26 @@ html {
     z-index: 1000;
 }
 
+#Header .menu-btn {
+    color: #fff;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 #Header .search-btn {
     float: right;
+    color: #fff;
+}
+
+#Header .icon-menu {
+    line-height: 46px;
+    padding: 0 30px;
+}
+
+#Header .menu-btn:hover {
+    background-color: #ccc;
 }
 
 #Header .search-btn:hover {
@@ -89,13 +109,14 @@ html {
     cursor: pointer;
 }
 
-#Header .icon-search {   
+#Header .icon-search {
     color: #fff;
     line-height: 46px;
     padding: 0 30px;
 }
 
-#nav, .subnav {
+#nav,
+.subnav {
     list-style-type: none;
 }
 
@@ -103,25 +124,25 @@ html {
     display: inline-block;
 }
 
-#nav > li{
-    display: inline-block;    
+#nav>li {
+    display: inline-block;
 }
 
-#nav li{ 
+#nav li {
     position: relative;
 }
 
-#nav .subnav li:hover a, #nav > li:hover > a {
+#nav .subnav li:hover a,
+#nav>li:hover>a {
     background-color: #ccc;
     color: #000;
-
 }
 
-#nav > li:hover > .subnav {
+#nav>li:hover>.subnav {
     display: block;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
@@ -144,51 +165,44 @@ html {
     top: 100%;
     left: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-   
 }
-
 
 #nav .subnav li {
     background-color: #fff;
     color: #000;
-    
 }
 
 #nav .subnav li a {
     color: #000;
     display: block;
-    line-height: 38px;  
+    line-height: 38px;
 }
 
-#Slider{
+#Slider {
     margin-top: 46px;
     padding-top: 50%;
-    background-image: url('/img/imgslider/anh1.jpg');
+    background-image: url('../img/imgslider/anh1.jpg');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center top;
     position: relative;
     background-color: #333;
 }
 
-#Slider .text-noidung{
+#Slider .text-noidung {
     position: absolute;
     bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: #fff;
-
 }
 
-#Slider .text-tieude{
+#Slider .text-tieude {
     padding-bottom: 16px;
 }
 
-
-#content{
-
-}
+#content {}
 
 #content .content-noidung {
     width: 800px;
@@ -208,6 +222,7 @@ html {
     font-weight: 300;
     letter-spacing: 4px;
 }
+
 #content .sub-content {
     text-align: center;
     padding-top: 15px;
@@ -215,18 +230,17 @@ html {
     opacity: 0.6;
 }
 
-
 #content .content-noidung .noidung {
     text-align: justify;
     padding-top: 10px;
     line-height: 1.4;
+    font-size: 16px;
 }
+
 #content .member {
     width: 100%;
     padding-top: 32px;
 }
-
-
 
 #content .name-member {
     margin: 15px 0px;
@@ -243,16 +257,15 @@ html {
     padding-bottom: 3px;
     font-size: 15px;
 }
+
 #backgroup-tua .banve li {
     border-bottom: 1px #ddd solid;
     padding: 8px 16px;
 }
 
-
 #backgroup-tua .banve {
     margin-top: 40px;
     background-color: #fff;
-    
 }
 
 #content .soldout {
@@ -281,20 +294,22 @@ html {
     background-color: #fff;
     margin: 0px 8px;
 }
+
 #content .tour-noidung h2 {
     font-weight: 550;
 }
 
 #content .tour-noidung {
     font-size: 15px;
-
 }
+
 #content .sub-tour img {
-  
-    width: 100%;   
+    width: 100%;
 }
 
-#content .tour-decs, #content .tour-ngaythang, #content .tour-thanhpho{
+#content .tour-decs,
+#content .tour-ngaythang,
+#content .tour-thanhpho {
     padding-top: 15px;
 }
 
@@ -328,7 +343,7 @@ html {
     margin-bottom: 64px;
 }
 
-#content .fan-contact .chinhlai{
+#content .fan-contact .chinhlai {
     width: 100%;
 }
 
@@ -341,7 +356,6 @@ html {
     font-size: 15px;
     margin-top: 8px;
     margin-left: 8px;
-
     width: 100%;
 }
 
@@ -365,14 +379,15 @@ html {
 
 #footer .social-list {
     font-size: 25px;
-
 }
+
 #footer .social-list a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);      
+    color: rgba(0, 0, 0, 0.6);
 }
+
 #footer p a {
-    color: rgba(0, 0, 0, 0.6);    
+    color: rgba(0, 0, 0, 0.6);
 }
 
 #footer p {
@@ -382,10 +397,12 @@ html {
 
 #footer p a:hover,
 #footer .social-list a:hover {
-    color: rgba(0, 0, 0, 0.4);    
+    color: rgba(0, 0, 0, 0.4);
 }
 
+
 /* modal */
+
 .modal {
     position: fixed;
     top: 0;
@@ -396,7 +413,6 @@ html {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
-
 }
 
 .open-modal {
@@ -410,6 +426,7 @@ html {
     display: block;
     position: relative;
 }
+
 .modal-header {
     background-color: #009688;
     height: 128px;
@@ -418,41 +435,38 @@ html {
     justify-content: center;
     font-size: 30px;
     color: #fff;
-    letter-spacing: 4px; 
-       
+    letter-spacing: 4px;
 }
 
 .modal-header i {
     padding-right: 16px;
-
 }
 
-.modal-content > i {
+.modal-content>i {
     position: absolute;
     right: 0;
     padding: 12px;
     color: #fff;
-
 }
 
 .modal-content i:hover {
     background-color: rgba(0, 0, 0, 0.3);
     color: #000;
 }
+
 .modal-body {
     margin: 16px;
     font-size: 15px;
-
 }
 
 .modal-body input {
-    width: 100%; 
-    padding: 8px;  
+    width: 100%;
+    padding: 8px;
     border: 1px solid #ddd;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
-.sub-body{
+.sub-body {
     display: block;
     padding: 15px 0;
     font-size: 15px;
@@ -466,7 +480,6 @@ html {
     background-color: #009688;
     border: 0;
     color: #fff;
-    
 }
 
 .modal-body button:hover {
@@ -484,9 +497,3 @@ html {
 .modal-footer a {
     color: #2196F3;
 }
-
-#Footer{
-
-}
-
-
